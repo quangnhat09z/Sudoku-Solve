@@ -73,11 +73,11 @@ Dự án trò chơi là dự án mà mỗi sinh viên khoa _Công nghệ thông 
 
 *6. Trò chơi mới hoặc Từ bỏ cuộc chơi*
    
-  ![newGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824218112_ccf5317e0a596881f1cfa4fb3172186a.jpg)
+  ![newGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/Screenshot%202024-05-22%20204537.png)
 
 - Bắt đầu một ván mới bằng click `Trò chơi mới`.
   
-  ![retire](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824169781_0947c584c833ad6e8a8445f3da38127e.jpg)
+  ![retire](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/Screenshot%202024-05-22%20204549.png)
   
   ![answer](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824218113_21b295a4ab1aab2fd4c9b85bfe18660d.jpg)
 
