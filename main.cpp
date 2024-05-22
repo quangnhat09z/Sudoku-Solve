@@ -22,9 +22,9 @@ const int SCREEN_WIDTH = 1225;
 const int SCREEN_HEIGHT = 690;
 
 const int N = 9;
-const int soDeDe = 16;
-const int soDeTrungBinh = 10;
-const int soDeKho = 15;
+const int soDeDe = 20;
+const int soDeTrungBinh = 20;
+const int soDeKho = 20;
 
 int board[N][N];
 int level = 1;
