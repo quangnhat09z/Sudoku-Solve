@@ -1,18 +1,13 @@
-# Sudoku Solve – 23021653 Mạch Trần Quang Nhật
+# Sudoku Solve 
 
-Dự án trò chơi là dự án mà mỗi sinh viên khoa _Công nghệ thông tin_ của trường _Đại học Công Nghệ - Đại học Quốc gia Hà Nội (UET)_ thực hiện trong môn học “Lập trình nâng cao” nhằm mục đích lấy điểm thành phần.
+Dự án của sinh viên khoa _Công nghệ thông tin_ của trường _Đại học Công Nghệ - Đại học Quốc gia Hà Nội (UET)_ thực hiện trong môn học “Lập trình nâng cao” nhằm mục đích lấy điểm thành phần.
 
 ## **Mô tả**
-
+- Tác giả: MSV: 23021653 - K68CA3 - Mạch Trần Quang Nhật.
 - Dự án được xây dựng bằng **_ngôn ngữ C++_** và có sử dụng thêm **_thư viện SDL2_** (Simple DirectMedia Layer).
 - Dự án được lấy cảm hứng từ trò chơi trí tuệ **_Sudoku_** phát minh bởi nhà toán học người Thụy Sỹ **_Leonhard Euler_** vào thế kỉ 18.
 - Trong **_Sudoku Solve_**, người chơi sẽ là một **_Sudoku Solver_** giải những bài toán Sudoku với độ khó khác nhau, giúp rèn luyện trí não, phát triển kỹ năng logic, suy luận và tư duy phản biện.
 
-## **Hướng dẫn cài đặt**
-
-- Bước 1:
-- Bước 2:
-- Bước 3:
 
 ## **Giới thiệu**
 
@@ -36,7 +31,7 @@ Dự án trò chơi là dự án mà mỗi sinh viên khoa _Công nghệ thông 
 *b) Mục Start Game:*
 ![startGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824266482_3e280f19ade8d02687f56423e8a5684c.jpg).
 
-- Bạn sẽ bắt tay vào việc giải câu đố với đề bài gồm những con số sẽ hiện lên trên ô vuông với 3 mức độ _Dễ_, _Trung bình_, _Khó_ tùy thuộc vào năng lực của bạn.
+- Bạn sẽ bắt tay vào việc giải câu đố với đề bài gồm những con số sẽ hiện lên trên ô vuông với 3 mức độ `Dễ`, `Trung bình`, `Khó` tùy thuộc vào năng lực của bạn.
 
 ### **II. Giao diện khi chơi:**
 
@@ -72,14 +67,14 @@ Dự án trò chơi là dự án mà mỗi sinh viên khoa _Công nghệ thông 
 - Bạn có thể tắt nhạc nền nếu nó ảnh hưởng đến sự tập trung của bạn.
 
 *6. Trò chơi mới hoặc Từ bỏ cuộc chơi*
-   
-  ![newGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824218112_ccf5317e0a596881f1cfa4fb3172186a.jpg)
 
-- Bắt đầu một ván mới bằng click `Trò chơi mới`.
-  
-  ![retire](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824169781_0947c584c833ad6e8a8445f3da38127e.jpg)
+  ![newGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/Screenshot%202024-05-22%20204537.png)
+
+  ![retire](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/Screenshot%202024-05-22%20204549.png)
   
   ![answer](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824218113_21b295a4ab1aab2fd4c9b85bfe18660d.jpg)
+  
+- Bắt đầu một ván mới bằng click `Trò chơi mới`.
 
 - Lời giải sẽ hiện ra khi bạn click `Bỏ cuộc` nhé.
 
