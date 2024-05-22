@@ -17,7 +17,7 @@ void clearRegion(SDL_Renderer* renderer, int x, int y, int width, int height);
 //*****************************************//
 
 //****************************** Khai Bao ************************/
-const string WINDOW_TITLE = "Sudoku";
+const string WINDOW_TITLE = "Sudoku Solve";
 const int SCREEN_WIDTH = 1225;
 const int SCREEN_HEIGHT = 690;
 
