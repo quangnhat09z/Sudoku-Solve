@@ -87,6 +87,7 @@ void drawPos(int x, int y);
 void drawSound();
 void chosenNumber(int question[][N], int number);
 void fillAnswer(int board[][N]);
+void exitApp();
 /*********************************************/
 
 
@@ -100,13 +101,15 @@ int main(int argc, char* argv[]) {
     soundWhenOpen();
     prepare();
 
-    waitUntilKeyPressed();
-    unload_SDL_and_Images();
-    unload_SDL_and_Sound();
-
+    exitApp();
     return 0;
 }
 
+void exitApp(){
+    unload_SDL_and_Images();
+    unload_SDL_and_Sound();
+    exit(1);
+}
 
 /****************** Set Window Icon ***********************/
 void windowIcon(){
@@ -196,8 +199,7 @@ void getOpinion() {
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                unload_SDL_and_Images();
-                exit(1);
+                exitApp();
             }
             else if (e.type == SDL_MOUSEBUTTONDOWN) {
                 int x = e.button.x;
@@ -212,7 +214,7 @@ void getOpinion() {
                 }
                 else if (isExit(x, y)) {
                     soundWhenClick();
-                    exit(1);
+                    exitApp();
                 }
             }
         }
@@ -229,8 +231,7 @@ void Continue() {
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                unload_SDL_and_Images();
-                exit(1);
+                exitApp();
             }
             else if (e.type == SDL_MOUSEBUTTONDOWN) {
                 int x = e.button.x;
@@ -266,8 +267,7 @@ void StartInIntroduction2(){
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                unload_SDL_and_Images();
-                exit(1);
+                exitApp();
             }
             else if (e.type == SDL_MOUSEBUTTONDOWN) {
                 int x = e.button.x;
@@ -361,8 +361,7 @@ void opinionInEnd() {
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                unload_SDL_and_Images();
-                exit(1);
+                exitApp();
             }
             else if (e.type == SDL_MOUSEBUTTONDOWN) {
                 int x = e.button.x;
@@ -399,7 +398,7 @@ void gameOver(){
     SDL_RenderPresent(renderer);
     soundWhenFail();
     opinionInEnd();
-    exit(1);
+    exitApp();
 }
 
 void successSolve(int question[N][N]) {
@@ -413,7 +412,7 @@ void successSolve(int question[N][N]) {
         SDL_RenderPresent(renderer);
         soundWhenSuccess();
         opinionInEnd();
-        exit(1);
+        exitApp();
     }
 }
 
@@ -638,8 +637,7 @@ int getPlayerGuess(){
         if (SDL_PollEvent(&e) == 0) continue;
 
         if ((e.type == SDL_QUIT) || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-            unload_SDL_and_Images();
-            exit(1);
+            exitApp();
         }
     }
     return number;
@@ -651,8 +649,7 @@ pair<int,int> getPos(){
     while (num.first<0 || num.first>N) {
         if ( SDL_WaitEvent(&e) == 0) continue;
         if ((e.type == SDL_QUIT) || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-            unload_SDL_and_Images();
-            exit(1);
+            exitApp();
         }
         if (e.type == SDL_MOUSEBUTTONDOWN) {
             int x = e.button.x, y = e.button.y;
@@ -749,8 +746,7 @@ void playAgainInRetire() {
     while (running) {
         while (SDL_PollEvent(&e) != 0) {
             if (e.type == SDL_QUIT || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE)) {
-                unload_SDL_and_Images();
-                exit(1);
+                exitApp();
             }
             else if (e.type == SDL_MOUSEBUTTONDOWN) {
                 int x = e.button.x;
