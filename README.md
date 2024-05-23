@@ -26,7 +26,7 @@ Dự án của sinh viên khoa _Công nghệ thông tin_ của trường _Đại
 *a) Mục Introduction:*
 ![introduction1](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824266568_474049d0543be2dc48ae15e017dbc6f6.jpg)
 ![introduction2](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824266518_a118e46955c554ffe36cc8fbbe58f2b9.jpg)
-- Giúp bạn có kiến thức nền tảng và nắm rõ luật chơi nếu là người lần đầu tiên chơi tựa game này.
+- Giúp bạn có kiến thức nền tảng và nắm rõ luật chơi nếu lần đầu tiên chơi tựa game này.
   
 *b) Mục Start Game:*
 ![startGame](https://github.com/quangnhat09z/Sudoku-Solve/blob/master/cmake-build-debug/MdImages/z5465824266482_3e280f19ade8d02687f56423e8a5684c.jpg).
