@@ -2,6 +2,7 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
+#include <cstring>
 #include <SDL.h>
 #include <SDL_mixer.h>
 using namespace std;
@@ -10,7 +11,6 @@ using namespace std;
 void logSDLError(std::ostream& os, const std::string &msg, bool fatal = false);
 void initSDL(SDL_Window* &window, SDL_Renderer* &renderer);
 void quitSDL(SDL_Window* window, SDL_Renderer* renderer);
-void waitUntilKeyPressed();
 SDL_Texture* loadTexture(const std::string &file, SDL_Renderer *ren);
 void renderTexture(SDL_Texture *tex, SDL_Renderer *ren, int x, int y, int w, int h);
 void clearRegion(SDL_Renderer* renderer, int x, int y, int width, int height);
@@ -30,8 +30,8 @@ int board[N][N];
 int level = 1;
 int countHeart = 0;
 int countHint = 0;
-int hintArray[100] = {0};
-int timesWrongArray[100] = {0};
+int hintArray[1000] = {0};
+int timesWrongArray[1000] = {0};
 bool isSoundPlaying = true;
 
 int question[N][N] = {0};
