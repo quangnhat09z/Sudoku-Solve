@@ -377,7 +377,9 @@ void opinionInEnd() {
                 else if(isStartInEnd(x,y)){
                     countHeart++;
                     countHint++;
-                    soundWhenPlaying();
+                    if (isSoundPlaying){
+                        soundWhenPlaying();
+                    }
                     newGame();
                 }
             }
@@ -501,7 +503,6 @@ void play(int question[][N], int result[][N], int fill[][N]){
     fillAnswer(fillArray);
     drawHeart(timesWrongArray[countHeart]);
     drawHint(hintArray[countHint]);
-    //pause();
     inputAnswer(question,result,fill);
 }
 
@@ -856,7 +857,7 @@ void unload_SDL_and_Images(){
     SDL_DestroyTexture(hint2);
     SDL_DestroyTexture(hint3);
 
-    SDL_DestroyTexture(number1);
+
     SDL_DestroyTexture(number1);
     SDL_DestroyTexture(number2);
     SDL_DestroyTexture(number3);
@@ -890,7 +891,6 @@ void load_SDL_and_Sound(){
     backgroundMusic1 = Mix_LoadMUS("Music//backgroundMusic1.mp3");
     backgroundMusic2 = Mix_LoadMUS("Music//backgroundMusic2.mp3");
 }
-
 void unload_SDL_and_Sound(){
     Mix_FreeChunk(click);
     Mix_FreeChunk(successSound);
@@ -992,15 +992,6 @@ void quitSDL(SDL_Window* window, SDL_Renderer* renderer){
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
-}
-void waitUntilKeyPressed(){
-    SDL_Event e;
-    while (true) {
-        if ( SDL_WaitEvent(&e) != 0 &&
-             (e.type == SDL_KEYDOWN || e.type == SDL_MOUSEBUTTONDOWN || e.type == SDL_QUIT) )
-            return;
-        SDL_Delay(100);
-    }
 }
 SDL_Texture* loadTexture(const std::string &file, SDL_Renderer *ren){
     //Khởi tạo là nullptr để tránh lỗi 'dangling pointer'
