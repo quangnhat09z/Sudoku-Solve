@@ -468,15 +468,15 @@ void drawHint(int hints){
 }
 
 void dealHint(int question[][N], int result[][N], int fillArray[][N], int row, int col){
-     question[row][col] = result[row][col];
-     fillArray[row][col] = result[row][col];
-     showGame(question);
-     fillAnswer(fillArray);
-     renderTexture(correct, renderer, 855, 510, 240, 42);
-     drawHeart(timesWrongArray[countHeart]);
-     drawHint(hintArray[countHint]);
-     soundWhenCorrect();
-     SDL_RenderPresent(renderer);
+    question[row][col] = result[row][col];
+    fillArray[row][col] = result[row][col];
+    showGame(question);
+    fillAnswer(fillArray);
+    renderTexture(correct, renderer, 855, 510, 240, 42);
+    drawHeart(timesWrongArray[countHeart]);
+    drawHint(hintArray[countHint]);
+    soundWhenCorrect();
+    SDL_RenderPresent(renderer);
 }
 /****************** Hint ***********************/
 
@@ -566,11 +566,11 @@ void showGame(int board[N][N]){
         for (int col = 0; col <N; col++){
             int index = board[row][col];
             if (to_string(index) != "0"){
-            string StringOfnumber = "SudokuImages/" + to_string(index)+".bmp";
-            SDL_Texture *numberI;
-            numberI = loadTexture(StringOfnumber, renderer);
-            renderTexture(numberI, renderer, startX+55*col, startY+55*row, 80, 80);
-             }
+                string StringOfnumber = "SudokuImages/" + to_string(index)+".bmp";
+                SDL_Texture *numberI;
+                numberI = loadTexture(StringOfnumber, renderer);
+                renderTexture(numberI, renderer, startX+55*col, startY+55*row, 80, 80);
+            }
         }
     }
     SDL_RenderPresent(renderer);
